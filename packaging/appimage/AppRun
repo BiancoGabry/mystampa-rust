@@ -1,0 +1,5 @@
+#!/bin/sh
+# MyStampa AppImage entry point: the window opens by itself when there is a
+# display; from a terminal without one (server) it runs in console mode.
+HERE="$(dirname "$(readlink -f "$0")")"
+exec "$HERE/usr/bin/mystampa" "$@"

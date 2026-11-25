@@ -1,0 +1,21 @@
+services:
+  mystampa:
+    image: mystampa-stampa
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mystampa
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - mystampa_logs:/app/logs
+    # stdout is also kept by Docker: without a cap it grows without limit
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  mystampa_logs:

@@ -1,0 +1,6 @@
+target
+dist
+logs
+.git
+.env
+mystampa.json

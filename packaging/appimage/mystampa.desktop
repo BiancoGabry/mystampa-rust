@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=MyStampa
+Comment=Servizio di stampa automatica MySagra
+Exec=mystampa
+Icon=mystampa
+Terminal=false
+Categories=Utility;
